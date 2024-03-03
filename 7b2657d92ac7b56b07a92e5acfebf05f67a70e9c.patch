@@ -1,0 +1,18 @@
+From 7b2657d92ac7b56b07a92e5acfebf05f67a70e9c Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Jelmer=20Vernoo=C4=B3?= <jelmer@jelmer.uk>
+Date: Wed, 14 Oct 2020 23:41:23 +0000
+Subject: [PATCH] Drop unnecessary shebang.
+
+---
+ patiencediff/_patiencediff_py.py | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/patiencediff/_patiencediff_py.py b/patiencediff/_patiencediff_py.py
+index 64210a1..b2fbc2c 100644
+--- a/patiencediff/_patiencediff_py.py
++++ b/patiencediff/_patiencediff_py.py
+@@ -1,4 +1,3 @@
+-#!/usr/bin/env python
+ # Copyright (C) 2005 Bram Cohen, Copyright (C) 2005, 2006 Canonical Ltd
+ #
+ # This program is free software; you can redistribute it and/or modify
