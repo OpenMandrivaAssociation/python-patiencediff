@@ -1,7 +1,7 @@
 %global pypi_name patiencediff
 Name:           python-%{pypi_name}
 Version:        0.2.1
-Release:        2
+Release:        3
 Summary:        Python implementation of the patiencediff algorithm
 
 License:        GPLv2+
