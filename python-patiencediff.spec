@@ -1,7 +1,7 @@
 %global pypi_name patiencediff
 Name:           python-%{pypi_name}
-Version:        0.2.1
-Release:        3
+Version:        0.2.19
+Release:        1
 Summary:        Python implementation of the patiencediff algorithm
 
 License:        GPLv2+
@@ -9,11 +9,11 @@ URL:            https://www.breezy-vcs.org/
 Source0:        https://files.pythonhosted.org/packages/p/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
 
 # Remove redundant shebang and conditional from __main__.py
-Patch1:   https://github.com/breezy-team/patiencediff/pull/5.patch
+# dropped (no longer applies): Patch1:   https://github.com/breezy-team/patiencediff/pull/5.patch
 # Remove redundant shebang from _patiencediff_py.py
-Patch2:   https://github.com/breezy-team/patiencediff/commit/7b2657d92ac7b56b07a92e5acfebf05f67a70e9c.patch
+# dropped (no longer applies): Patch2:   https://github.com/breezy-team/patiencediff/commit/7b2657d92ac7b56b07a92e5acfebf05f67a70e9c.patch
 # Fix typo in README
-Patch3:   https://github.com/breezy-team/patiencediff/pull/6.patch
+# dropped (no longer applies): Patch3:   https://github.com/breezy-team/patiencediff/pull/6.patch
 
 BuildRequires:  python3-devel
 BuildRequires:  python3dist(setuptools)
@@ -30,7 +30,7 @@ humans, and implementation simplicity.}
 %description %_description
 
 %prep
-%autosetup -p1 -n %{pypi_name}-%{version}
+%autosetup -p1 -n patiencediff-0.2.19
 
 %build
 export CC=gcc
